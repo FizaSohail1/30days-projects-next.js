@@ -9,11 +9,11 @@ function Calculator() {
 
   const handleNum1 = (e: ChangeEvent<HTMLInputElement>): void => {
     setNum1(e.target.value);
-  };
+};
 
   const handleNum2 = (e: ChangeEvent<HTMLInputElement>): void => {
     setNum2(e.target.value);
-  };
+};
 
   const add = () => setResult((parseFloat(num1) + parseFloat(num2)).toString());
   const subtract = () => setResult((parseFloat(num1) - parseFloat(num2)).toString());
@@ -73,7 +73,7 @@ function Calculator() {
 
           <div className="flex flex-col space-y-2 mt-4">
             <label htmlFor="result" className="text-gray-300">Result</label>
-            <input
+            <input 
               id="result"
               type="text"
               value={result}
