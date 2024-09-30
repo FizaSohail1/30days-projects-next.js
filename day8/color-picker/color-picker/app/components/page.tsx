@@ -18,7 +18,7 @@ function ColorPicker() {
     <div>
       <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
     <div className="w-full max-w-md mx-auto p-8 grid gap-8">
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-2 text-white">
         <div>Color Picker</div>
         <div>
           Select a color and copy the hex and RGB values.
@@ -30,18 +30,13 @@ function ColorPicker() {
           style={{ backgroundColor: color }}
         />
         <div className="grid gap-2 text-center">
-          <div className="text-2xl font-semibold">{color}</div>
+          <div className="text-2xl font-semibold text-white">{color}</div>
           <div className="text-gray-500 dark:text-gray-400">
             RGB: {parseInt(color.slice(1, 3), 16)},{" "}
             {parseInt(color.slice(3, 5), 16)},{" "}
             {parseInt(color.slice(5, 7), 16)}
           </div>
-          <button
-            onClick={copyToClipboard}
-            className="w-full"
-          >
-            Copy to Clipboard
-          </button>
+          <button onClick={copyToClipboard} className="w-full text-white">Copy to Clipboard</button>
         </div>
         <input
           type="color"
