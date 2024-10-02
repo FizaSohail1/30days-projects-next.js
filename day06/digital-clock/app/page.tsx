@@ -1,5 +1,5 @@
 
-import DigitalClock from "../app/componenet/page";
+import DigitalClock from "./componenet/page";
 
 export default function Home() {
   return (
